@@ -1,0 +1,19 @@
+rule Linux_Dropper_Behavior
+{
+    meta:
+        description = "Detects behavioral patterns of Linux droppers"
+        author = "Louis"
+
+    strings:
+        $fopen   = "fopen"
+        $fwrite  = "fwrite"
+        $chmod   = "chmod"
+        $exec    = "execve"
+        $fork    = "fork"
+        $tmp     = "/tmp/"
+
+    condition:
+        (
+            $fopen and $fwrite and $chmod and $exec
+        ) and $tmp
+}
