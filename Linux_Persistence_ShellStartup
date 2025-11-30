@@ -1,0 +1,29 @@
+rule Linux_Persistence_ShellStartup
+{
+    meta:
+        description = "Detect modification of shell startup files for persistence"
+        author = "Louis"
+
+    strings:
+        // Startup files attackers commonly abuse
+        $bashrc       = ".bashrc"
+        $profile      = ".profile"
+        $bashprofile  = ".bash_profile"
+        $zshrc        = ".zshrc"
+
+        // Commands typically injected into startup files
+        $export_path  = "export PATH="
+        $mal_exec     = "sh -c"
+        $tmp_exec     = "/tmp/"
+        $evil_cmd_1   = "nohup"
+        $evil_cmd_2   = "@reboot"
+
+        // used to alter startup files
+        $fopen = "fopen"
+        $write = "fwrite"
+        $chmod = "chmod("
+
+    condition:
+        (any of ($bashrc, $profile, $bashprofile, $zshrc) and any of ($fopen, $write))
+        or ($export_path and $tmp_exec)
+}
