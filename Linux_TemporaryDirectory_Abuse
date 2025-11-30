@@ -1,0 +1,24 @@
+rule Linux_TemporaryDirectory_Abuse
+{
+    meta:
+        description = "Detect executables referencing Unix temp directories for storing payloads"
+        author = "Louis"
+
+    strings:
+        // Common temp directories abused by malware
+        $tmp      = "/tmp/"
+        $var_tmp  = "/var/tmp/"
+        $dev_shm  = "/dev/shm/"
+        $run_tmp  = "/run/tmp/"
+
+        // Executable creation markers
+        $sh       = ".sh"
+        $py       = ".py"
+        $pl       = ".pl"
+        $elf      = "\x7FELF"
+
+    condition:
+        // Malware referencing temp dirs AND executable content
+        any of ($tmp, $var_tmp, $dev_shm, $run_tmp)
+        and any of ($sh, $py, $pl, $elf)
+}
